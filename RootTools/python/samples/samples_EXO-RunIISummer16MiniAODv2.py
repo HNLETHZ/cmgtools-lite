@@ -31,10 +31,10 @@ TTJets_DiLepton_ext = kreator.makeMCComponent("TTJets_DiLepton_ext", "/TTJets_Di
 
 
 #zhud: default uncommented!
-#TTLep_pow_ext = kreator.makeMCComponent("TTLep_pow_ext", "/TTTo2L2Nu_13TeV-powheg/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext1-v1/MINIAODSIM", "CMS", ".*root", 831.76*((3*0.108)**2) )
+TTLep_pow_ext = kreator.makeMCComponent("TTLep_pow_ext", "/TTTo2L2Nu_13TeV-powheg/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext1-v1/MINIAODSIM", "CMS", ".*root", 831.76*((3*0.108)**2) )
 
-#changes from zhud for HNL samples
-TTLep_pow_ext = kreator.makeMCComponent("TTLep_pow_ext", "/HeavyNeutrino_trilepton_M-10_V-0p0001_2l_NLO_displaced/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root", 831.76*((3*0.108)**2) )
+#changes from zhud for HNL sample
+HCL_sample = kreator.makeMCComponent("HNL_sample", "/HeavyNeutrino_trilepton_M-10_V-0p0001_2l_NLO_displaced/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM", "CMS", ".*root", 831.76*((3*0.108)**2) )
 #
 
 
@@ -62,6 +62,7 @@ TTJets_DiLepton,
 TTJets_DiLepton_ext,
 #TTLep_pow,
 TTLep_pow_ext,
+HNL_sample
 #TTJets_LO_HT600to800,
 #TTJets_LO_HT600to800_ext,
 #TTJets_LO_HT800to1200,
